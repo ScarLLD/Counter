@@ -45,6 +45,8 @@ public class Counter : MonoBehaviour
 
             CountChanged?.Invoke(_counter);
 
+            _counter = default;
+
             yield return _wait;
         }
 

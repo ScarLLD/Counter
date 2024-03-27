@@ -19,5 +19,6 @@ public class ScoreView : MonoBehaviour
     private void OnCountChanged(int count)
     {
         _CountText.text = count.ToString();
+        count = default;
     }
 }
